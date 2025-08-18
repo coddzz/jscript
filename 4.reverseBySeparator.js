@@ -15,3 +15,10 @@ function reverseBySeparator(string, separator){
 
 var reverseEachWord = reverseBySeparator(reverseSentence," ");
 console.log(reverseEachWord);
+
+
+console.log(string.split(" "));     // [ 'Welcome', 'to', 'JavaScript!!' ]
+
+var array = ["Welcome","to","JavaScript"]
+console.log(array.join(" - "));       // Welcome - to - JavaScript
+console.log(array.reverse());       // [ 'JavaScript', 'to', 'Welcome' ]

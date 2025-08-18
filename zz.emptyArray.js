@@ -2,13 +2,10 @@
 
 var arrayList = ['A','B','C','D','E']
 
-//method 1
-arrayList= [];
+arrayList= [];  //or
 
-//method 2
-arrayList.length = 0;
+arrayList.length = 0;  //or
 
-//method 3
 while (arrayList.length){
     arrayList.pop();
 }
