@@ -30,6 +30,13 @@ function sayHi() {
 
 
 // Bset Practices
-// • Keep scope as local as possible
 // • Declare variables and functions before using them.
 // • Always use let and const to create variables
+
+// • Keep scope as local as possible
+// • For better modularity, you can pass num as an argument to the addNum function.
+
+function addNum(num){
+    return 2 + num
+}
+addNum(3); //5
