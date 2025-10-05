@@ -1,6 +1,8 @@
 
-// A closure is when a function “remembers” the variables 
-// from its outer scope, even after that scope is gone.
+// Closure
+/* A closure allows an inner function to access the variables and parameters of
+ its outer (enclosing) function, even after the outer function has finished 
+ executing. */
 
 function outer() {
   let count = 0;
@@ -13,7 +15,6 @@ const counter = outer();
 counter(); // 1
 counter(); // 2
 console.log(counter()); // 3
-
 
 // inner still has access to count even though outer finished running.
 
@@ -34,3 +35,4 @@ const updateHandler = encapsulateData();
 const updatedAge = updateHandler(); // 24
 console.log(user); // undefined
 var user;
+
