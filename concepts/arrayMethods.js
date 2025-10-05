@@ -1,6 +1,13 @@
 
-// push(), pop(), slice(), splice()
+// Array Methods
 
+let nums = [1, 2, 3, 4];
+console.log(nums.map(n => n * 2));              // [2,4,6,8]
+console.log(nums.filter(n => n % 2 === 0));     // [2,4]
+console.log(nums.reduce((a, b) => a + b, 0));   // 10
+
+
+// push(), pop(), slice(), splice()
 
 let fruits = ["apple", "grapes", "mango"];
 fruits.push("orange");   
