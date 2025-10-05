@@ -1,6 +1,23 @@
 
 // Scope & Hoisting
-// Scopes --  Global, Function & Block scopes
+
+
+// Scopes
+// Scopes --  Global, Function() & Block scopes {}
+
+let globalVar = "I’m global";
+
+function testScope() {        
+  let localVar = "I’m local";
+  console.log(globalVar); 
+  console.log(localVar);
+}
+testScope()
+console.log(globalVar)  
+// console.log(localVar); // Error outside
+
+
+// Hoisting
 // Hoisting --  (var / functions are used to workd codes before declaration )
 
 // Variable hoisting
@@ -13,6 +30,14 @@ console.log(x);
 sayHi(); // "Hello"  ,  works before declaration.
 function sayHi() {
   console.log("Hello");
+}
+
+// it's important to know that only function declarations are hoisted.
+// Function expressions are not hoisted.
+// console.log(addNums(1,3)); 
+// // ReferenceError: cannot access "addNums" before initialization
+const addNums = function (a,b) {
+return a + b;
 }
 
 
