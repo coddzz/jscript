@@ -1,7 +1,7 @@
 
 // multi-arrow functions
-const fn = (x,y) => (z) => console.log(x+y+z);
-fn(3,2)(5)  //10
+const addNum = (x,y) => (z) => console.log(x+y+z);
+addNum(3,2)(5)  //10
 
 
 
@@ -17,5 +17,5 @@ console.log(functionOuter()());  // 7
 
 
 // simplified
-const outerFn = (count = 2) => () =>{ count++; return count; }
-console.log(outerFn()());  //3
+const Fn = (count = 2) => () =>{ count++; return count; }
+console.log(Fn()());  //3

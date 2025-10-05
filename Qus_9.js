@@ -6,10 +6,11 @@
 
 function createBase(baseNumber){
     return function(N){
-        console.log( baseNumber + N);
+        return ( baseNumber + N);
     }
 }
 
-var addSix = createBase(6);
-addSix(10);
-addSix(23);
+const addNum = createBase(10);
+console.log(addNum(20))          // 30
+
+console.log(createBase(10)(20))  // 30

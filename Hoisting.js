@@ -1,6 +1,7 @@
 
 // Scope & Hoisting
-// Hoisting ~
+// Scopes --  Global, Function & Block scopes
+// Hoisting --  (var / functions are used to workd codes before declaration )
 
 // Variable hoisting
 console.log(x); // undefined 
