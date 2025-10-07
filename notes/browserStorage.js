@@ -2,7 +2,7 @@ import { LocalStorage } from 'node-localstorage';
 
 
 // Browser storage
-const localStorage = new LocalStorage('../scratch');
+const localStorage = new LocalStorage('./scratch');
 
 localStorage.setItem("name", "sara");
 localStorage.setItem("username", "john");
