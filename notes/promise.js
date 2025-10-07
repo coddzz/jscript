@@ -14,3 +14,6 @@ promise
 // .then() → runs when the promise is resolved
 // .catch() → runs if the promise is rejected
 // .finally() → always runs no matter what (after .then() or .catch()).
+
+// Promise = .then + .catch + .finally
+// promise ia function combinations of .then  .catch & .finally
